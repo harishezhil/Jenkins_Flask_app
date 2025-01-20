@@ -1,0 +1,77 @@
+Started by user Harish Ezhil
+
+Running as SYSTEM
+Building in workspace H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/harishezhil/Jenkins_Flask_app.git # timeout=10
+Fetching upstream changes from https://github.com/harishezhil/Jenkins_Flask_app.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/harishezhil/Jenkins_Flask_app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 80e7ef311485fd43da6cdf419a074ef94b578fad (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 80e7ef311485fd43da6cdf419a074ef94b578fad # timeout=10
+Commit message: "create requ commit"
+ > git.exe rev-list --no-walk 80e7ef311485fd43da6cdf419a074ef94b578fad # timeout=10
+[EXERCISE_3] $ cmd /c call C:\Users\harish\AppData\Local\Temp\jenkins12514062474044601217.bat
+
+H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3>REM Step 1: Set up a virtual environment 
+
+H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3>python -m venv .venv 
+
+H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3>REM Step 2: Activate the virtual environment 
+
+H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3>call .venv\Scripts\activate 
+Collecting Flask==2.2.2 (from -r requirements.txt (line 1))
+  Using cached Flask-2.2.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting gunicorn==20.1.0 (from -r requirements.txt (line 2))
+  Using cached gunicorn-20.1.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting Werkzeug>=2.2.2 (from Flask==2.2.2->-r requirements.txt (line 1))
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.0 (from Flask==2.2.2->-r requirements.txt (line 1))
+  Using cached jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.0 (from Flask==2.2.2->-r requirements.txt (line 1))
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.0 (from Flask==2.2.2->-r requirements.txt (line 1))
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting setuptools>=3.0 (from gunicorn==20.1.0->-r requirements.txt (line 2))
+  Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting colorama (from click>=8.0->Flask==2.2.2->-r requirements.txt (line 1))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.0->Flask==2.2.2->-r requirements.txt (line 1))
+  Using cached MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl.metadata (4.1 kB)
+Using cached Flask-2.2.2-py3-none-any.whl (101 kB)
+Using cached gunicorn-20.1.0-py3-none-any.whl (79 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.5-py3-none-any.whl (134 kB)
+Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Using cached MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl (15 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: setuptools, MarkupSafe, itsdangerous, colorama, Werkzeug, Jinja2, gunicorn, click, Flask
+Successfully installed Flask-2.2.2 Jinja2-3.1.5 MarkupSafe-3.0.2 Werkzeug-3.1.3 click-8.1.8 colorama-0.4.6 gunicorn-20.1.0 itsdangerous-2.2.0 setuptools-75.8.0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3\.venv\Scripts\flask.exe\__main__.py", line 4, in <module>
+  File "H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3\.venv\Lib\site-packages\flask\__init__.py", line 5, in <module>
+    from .app import Flask as Flask
+  File "H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3\.venv\Lib\site-packages\flask\app.py", line 30, in <module>
+    from werkzeug.urls import url_quote
+ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (H:\nextrurn\new_jenkins_home\workspace\EXERCISE_3\.venv\Lib\site-packages\werkzeug\urls.py). Did you mean: 'unquote'?
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   207  100   207    0     0   4907      0 --:--:-- --:--:-- --:--:--  5048
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+Finished: SUCCESS
